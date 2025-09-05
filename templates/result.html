@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .result-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        .result-content {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .result-image {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        a.btn {
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a.btn:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>QR Code Scan Result</h1>
+    <div class="result-container">
+        {% if value %}
+        <p class="result-content">QR Code Content: {{ value }}</p>
+        <img src="{{ image_path }}" class="result-image" />
+        {% else %}
+        <p class="result-content">No QR code detected.</p>
+        {% endif %}
+        <br>
+        <a href="/" class="btn">Back</a>
+    </div>
+</body>
+
+</html>
