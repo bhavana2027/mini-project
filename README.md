@@ -76,3 +76,7 @@ Add history/logging of past scans.
 Build a Docker container for easier deployment.
 
 Add API endpoint for programmatic QR code scanning.
+
+<img width="489" height="362" alt="Screenshot 2025-10-05 074650" src="https://github.com/user-attachments/assets/0ada1308-f1a7-4757-8504-edb99a400b55" />
+
+<img width="883" height="308" alt="Screenshot 2025-10-05 080324" src="https://github.com/user-attachments/assets/855d4d87-f087-4cc4-a46f-0e4ad497b6a7" />
